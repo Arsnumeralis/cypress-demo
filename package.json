@@ -1,10 +1,12 @@
 {
   "dependencies": {
-    "cypress": "^9.5.3",
     "fs": "^0.0.1-security"
   },
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^9.5.3"
   }
 }

@@ -14,6 +14,11 @@ describe("suiteTwo", () => {
     cy.get(".btn").click();
   });
   it("testThree", () => {
-    cy.get(".navbar-nav > :nth-child(1) > .nav-link").should("exist");
+    cy.get(".dropdown > .nav-link").should("exist").click();
+    cy.get('[href="/employees/org_chart?identifier=twenty7tec"]').click();
+    cy.get(":nth-child(14) > :nth-child(22)").should(
+      "contain",
+      "Paulius Mickevicius"
+    );
   });
 });
